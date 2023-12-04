@@ -12,8 +12,6 @@ describe("Box (proxy)", function () {
     })
 
   it("should retrieve value previously stored", async function () {    
-    // console.log(box.address," box(proxy)")
-    // console.log(await upgrades.erc1967.getImplementationAddress(box.address)," getImplementationAddress")
     // console.log(await upgrades.erc1967.getAdminAddress(box.address), " getAdminAddress")   
 
     expect((await box.retrieve()).toString()).to.equal('42');
